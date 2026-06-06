@@ -1,0 +1,132 @@
+/* cabeçalho com logo, nome e slogan */
+header {
+    background-color: #111827;
+    height: 110px;
+}
+.header-content {
+    margin-left: 250px;
+
+}
+.header-content {
+    max-height: 110px;
+}
+.header-content #logo, .header-content #name{
+    height: 80px;
+}
+
+/* area principal com sidebar e conteúdo */
+main {
+    display:flex;
+    background-color: #2563EB;
+    align-items: flex-start;
+}
+/* config da sidebar para scrolar com o site */
+.menu-lateral {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #111827;
+    color: white;
+    font-size: larger;
+}
+/* faz o menu começar abaixo do header */
+.menu-lateral a:first-child{
+    margin-top: 112px;
+}
+.main-content{
+    flex: 1;
+    padding: 20px;
+    margin-left: 215px;
+    padding: 20px;
+}
+
+/* estilos das classes e cards */
+.home-layout {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    min-width: 100%;
+    justify-content: center;
+}
+.historia, .impulsiona, .servicos {
+    width: 32%;
+    min-height: 35vh;
+    margin-bottom: 15px;
+    padding: 30px;
+}
+/* li do card .servicos em home */
+li{
+    padding: 8px;
+}
+
+.trabalho {
+    min-height: 80vh;
+    padding: 30px;
+}
+.app-img{
+    max-height: 32vh;
+    margin-top: 10px;
+}
+/* limita a area ocupada pelas img, e as redimensiona */
+.img-div {
+    height: 350px;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.img-div img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+}
+
+.qa{
+    width: 350px;
+}
+
+/* cor de fundo dos cards */
+.historia, .impulsiona, .servicos, .valores, .trabalho, .parceria, .qa{
+    background-color: #E5E7EB
+}
+
+/* fontes e cores */
+h1{
+    font-size:56px;
+    font-weight: 800; 
+    font-style: oblique; 
+    color: #111827;
+}
+.h1-header{
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    align-self: center;
+    margin-left: 40px;
+}
+.servicos {
+    font-size: larger;
+}
+
+/* rodapé com dados da empresa */
+footer{
+    min-height: 180px;
+    padding:32px 24px;
+    background-color: #111827;
+}
+.footer-margin{
+    margin-left:215px;
+    color: white
+}
+footer a{
+    text-decoration: none;
+}
+
+footer i {
+    font-size: 28px;
+    margin-right: 10px;
+}
+footer i:hover{
+    opacity: 0.7;
+}
