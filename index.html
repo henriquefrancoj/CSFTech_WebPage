@@ -13,18 +13,15 @@
     <div class="w3-flex header-content">
       <figure>
         <a href="#">
-          <img src="./img/comp-logo.png" alt="Logo da Compania" id="logo">
+          <img src="./assets/img/comp-logo.png" alt="Logo da Compania" id="logo">
         </a>
       </figure>
       <figure>
         <a href="#">
-          <img src="./img/comp-name.png" alt="Nome da compania" id="name">
+          <img src="./assets/img/comp-name.png" alt="Nome da compania" id="name">
         </a>
       </figure>
       <h1 class="h1-header">Conectando tecnologia ao crescimento do seu negócio</h1>
-    </div>
-    <div class="header-content">
-      <h1></h1>
     </div>
   </header>
 
@@ -32,7 +29,7 @@
     <!-- Menu de navegação lateral -->
     <nav class="w3-bar-block w3-center menu-lateral">
       <a href="#Home" class="w3-bar-item w3-button">Home</a>
-      <a href="#Trabalhos" class="w3-bar-item w3-button">Trabalhos</a>
+      <a href="#Servicos" class="w3-bar-item w3-button">Serviços</a>
       <a href="#Parceiros" class="w3-bar-item w3-button">Parceiros</a>
       <a href="#FAQ" class="w3-bar-item w3-button">FAQ</a>
     </nav>
@@ -40,13 +37,12 @@
     <div class="main-content">
       <!-- -->
       <section class="w3-container w3-center" id="Home">
-        <div style="min-height: 90vh; margin-bottom: 50px">
+        <div>
           <h1>Creative Solutions</h1>
           <!-- Conteúdo de seção home com 2 colunas dispostas em flex -->
-          <div class="home-layout">
-            <!-- area com a história e valores -->
-            <div class="w3-flex" style="gap:10px; flex-wrap: wrap; min-height: 50vh; justify-content: center;">
-              <div class="w3-card historia">
+          <div class="w3-container w3-card w3-padding home-layout">
+            <div class="w3-flex w3-padding historia-motivacao">
+              <div class="historia">
                 <h2>Nossa história</h2>
                 <p>A Creative Solutions FTech nasceu da união entre experiência 
                   em tecnologia e paixão por transformar o dia a dia do comércio.
@@ -64,7 +60,7 @@
                   sob medida para cada negócio.
                 </p>
               </div>
-              <div class="w3-card impulsiona">
+              <div class="impulsiona">
                 <h2>O que nos impulsiona</h2>
                 <p>Somos focados em desenvolver soluções inteligentes para automação 
                   comercial, proporcionando mais eficiência, segurança e produtividade 
@@ -76,6 +72,28 @@
                 <p>Nossa visão é clara e direta: Tornar-se referência nacional 
                   em sistemas de gestão e automação para o varejo.</p>
               </div>
+            </div>
+            <div class="w3-flex w3-padding valores">
+              <div class="w3-padding valores" style="max-height: 25vh;">
+                  <div class="w3-container" style="margin: 10px 0">
+                    <img src="./assets/img/comp-values.png" alt="Valores da empresa">
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <hr>
+      <!-- Seção dos trabalhos -->
+      <section class="w3-container w3-center" id="Servicos">
+        <div>
+          <h1>Nossos serviços</h1>
+          <div class="w3-card servicos-galeria">
+            <h2> Nosso foco é voltado para sistemas de lojas físicas (PDV) e online, visando
+              produtividade sem complicações, contribuindo com diversas empresas do ramo.</h2>
+            <div class="servicos-layout">
+              <!-- coluna da esquerda -->
               <div class="w3-card servicos">
                 <h2>Nossos serviços</h2>
                 <ul>
@@ -89,50 +107,35 @@
                   <li>Sistema de alta performance</li>
                 </ul>
               </div>
-            </div>
-            <!-- area dos valores da empresa -->
-            <div class="w3-card w3-padding valores">
-              <h2>Valores</h2>
-              <div class="w3-container" style="margin: 10px 0">
-                <img src="./img/comp-values.png" alt="">
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-      <!--  -->
-      <hr>
-      <!-- Seção dos trabalhos -->
-      <section class="w3-container w3-center" id="Trabalhos">
-        <div style="min-height: 90vh; margin-bottom: 50px">
-          <h1>Nossos trabalhos</h1>
-          <div class="w3-card trabalho">
-            <h2> Nosso foco é voltado para sistemas de lojas físicas (PDV) e online, visando
-              produtividade sem complicações, contribuindo com diversas empresas do ramo.</h2>
-            <div class="w3-row-padding app-img">
-              <div class="w3-half img-div">
-                <h3>Sistema de caixa de papelaria local</h3>
-                <img src="./img/app-papelaria.png">
-              </div>
-              <div class="w3-half img-div">
-                <h3>Site da Kabum</h3>
-                <img src="./img/app-kabum.png">
-              </div>
-            </div>
-            <hr>
-            <div class="w3-row-padding app-img">
-              <div class="w3-half img-div">
-                <h3>Aplicativo para Padaria Local</h3>
-                <img src="./img/app-padaria.png">
-              </div>
-              <div class="w3-half img-div">
-                <h3>Aplicativo do IFood</h3>
-                <img src="./img/app-ifood.png">
+              <!-- coluna da direita -->
+              <div class="slideshow">
+                <div class="imgslides img-div">
+                  <h3><strong>Sistema de caixa de papelaria local</strong></h3>
+                  <img src="./assets/img/app-papelaria.png">
+                </div>
+                <div class="imgslides img-div">
+                  <h3><strong>Site da Kabum</strong></h3>
+                  <img src="./assets/img/app-kabum.png">
+                </div>
+                <div class="imgslides img-div">
+                  <h3><strong>Aplicativo para Padaria Local</strong></h3>
+                  <img src="./assets/img/app-padaria.png">
+                </div>
+                <div class="imgslides img-div">
+                  <h3><strong>Aplicativo do IFood</strong></h3>
+                  <img src="./assets/img/app-ifood.png">
+                </div>
+                <div class="slide-button">
+                  <button class="slide-btn" onclick="plusDivs(-1)"> 
+                    <i class="fa-solid fa-chevron-left"></i> </button>
+                  <button class="slide-btn" onclick="plusDivs(1)">
+                    <i class="fa-solid fa-chevron-right"></i> </button>
+                </div>  
               </div>
             </div>
           </div>
         </div>
+        
       </section>
       <!--  -->
       <hr>
@@ -144,16 +147,16 @@
             <h2> Essas empresas são quem contribuem para o nosso sucesso</h2>
             <div class="w3-flex w3-row-padding img-div" style="margin: 10px 0; padding: 12px 4px;">
                 <a href="https://www.amazon.com.br/" class="w3-opacity w3-hover-opacity-off" target="_blank">
-                  <img src="./img/logo-amazon.png" alt="Logo da Amazon">
+                  <img src="./assets/img/logo-amazon.png" alt="Logo da Amazon">
                 </a>
                 <a href="https://banco.bradesco/" class="w3-opacity w3-hover-opacity-off" target="_blank">
-                <img src="./img/logo-bradesco.png" alt="Logo do Bradesco">
+                <img src="./assets/img/logo-bradesco.png" alt="Logo do Bradesco">
               </a>
               <a href="https://www.cps.sp.gov.br/" class="w3-opacity w3-hover-opacity-off" target="_blank">
-                <img src="./img/logo-cps.png" alt="Logo do CPS">
+                <img src="./assets/img/logo-cps.png" alt="Logo do CPS">
               </a>
               <a href="https://www.coca-cola.com/br/pt" class="w3-opacity w3-hover-opacity-off" target="_blank">
-                <img src="./img/logo-coca-cola.png" alt="Logo da Coca-Cola">
+                <img src="./assets/img/logo-coca-cola.png" alt="Logo da Coca-Cola">
               </a>
             </div>
             
@@ -161,16 +164,16 @@
 
             <div class="w3-flex w3-row-padding img-div" style="margin: 10px 0; padding: 12px 4px;">
               <a href="https://www.google.com/" class="w3-opacity w3-hover-opacity-off" target="_blank">
-                <img src="./img/logo-google.png" alt="Logo da Google">
+                <img src="./assets/img/logo-google.png" alt="Logo da Google">
               </a>
               <a href="https://www.magazineluiza.com.br/" class="w3-opacity w3-hover-opacity-off" target="_blank">
-                <img src="./img/logo-magalu.png" alt="Logo da Magalu">
+                <img src="./assets/img/logo-magalu.png" alt="Logo da Magalu">
               </a>
               <a href="https://www.mercadolivre.com.br/" class="w3-opacity w3-hover-opacity-off" target="_blank">
-                <img src="./img/logo-mercado-livre.png" alt="Logo do Mercado Livre">
+                <img src="./assets/img/logo-mercado-livre.png" alt="Logo do Mercado Livre">
               </a>
               <a href="https://www.w3schools.com/" class="w3-opacity w3-hover-opacity-off" target="_blank">
-                <img src="./img/logo-w3schools.png" alt="Logo do W3Schools">
+                <img src="./assets/img/logo-w3schools.png" alt="Logo do W3Schools">
               </a>
             </div>
           </div>
@@ -186,13 +189,13 @@
             <!-- seção 1 de duvidas -->
             <div class="w3-flex w3-row-padding" style="gap:10px; flex-wrap:wrap; justify-content: space-around; min-height: 41vh; margin: 12px;">
               <div class="w3-card w3-padding qa">
-                <h2>O que é um sistema PDV?</h2>
+                <h2>O que é e quais as funções de um sistema PDV?</h2>
                 <p>Um sistema PDV (Ponto de Venda) é uma solução utilizada para 
                   registrar vendas, emitir comprovantes, controlar estoque e gerenciar 
                   operações comerciais de forma rápida e segura.</p>
               </div>
               <div class="w3-card w3-padding qa">
-                <h2>Quais tipos de empresas podem utilizar nossos sistemas?</h2>
+                <h2>Quais empresas podem utilizar nossos sistemas?</h2>
                 <p>Nossas soluções são indicadas para mercados, padarias, lojas 
                   de roupas, papelarias, farmácias, restaurantes, pet shops e 
                   diversos outros segmentos do comércio.</p>
@@ -276,5 +279,6 @@
       </a>
     </div>
   </footer>
+  <script src="./assets/script.js"></script>
 </body>
 </html>

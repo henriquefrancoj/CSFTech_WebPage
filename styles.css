@@ -15,10 +15,36 @@ header {
 }
 
 /* area principal com sidebar e conteúdo */
+/* estilização do fundo da página, com gradientes */
 main {
     display:flex;
-    background-color: #2563EB;
     align-items: flex-start;
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(96,165,250,.30),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at bottom left,
+            rgba(59,130,246,.25),
+            transparent 32%
+        ),
+        linear-gradient(
+            rgba(96,165,250,.08) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(96,165,250,.08) 1px,
+            transparent 1px
+        ),
+        #1E3A8A;
+    background-size:
+        auto,
+        auto,
+        60px 60px,
+        60px 60px;
 }
 /* config da sidebar para scrolar com o site */
 .menu-lateral {
@@ -42,7 +68,10 @@ main {
     margin-left: 215px;
     padding: 20px;
 }
-
+section{
+    min-height: 98vh;
+    margin: 25px 0;
+}
 /* estilos das classes e cards */
 .home-layout {
     display: flex;
@@ -51,20 +80,44 @@ main {
     min-width: 100%;
     justify-content: center;
 }
-.historia, .impulsiona, .servicos {
+.historia-motivacao {
+    display:flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    min-width: 100%;
+    justify-content: center;
+}
+.historia, .impulsiona {
     width: 32%;
     min-height: 35vh;
     margin-bottom: 15px;
     padding: 30px;
 }
-/* li do card .servicos em home */
+
+/* area dos serviços  */
+.servicos-galeria {
+    min-height: 80vh;
+    padding: 30px;
+}
+.servicos-layout {
+    display: flex;
+    gap: 30px;
+    align-items:center;
+    justify-content: center;
+}
 li{
     padding: 8px;
 }
-
-.trabalho {
-    min-height: 80vh;
+.servicos{
+    width: 35%;
+    min-height: 400px;
     padding: 30px;
+}
+.slideshow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
 }
 .app-img{
     max-height: 32vh;
@@ -72,22 +125,68 @@ li{
 }
 /* limita a area ocupada pelas img, e as redimensiona */
 .img-div {
-    height: 350px;
-    overflow: hidden;
-    justify-content: space-between;
+    height: 100%;
+    text-align: center;
 }
 .img-div img {
     width: 100%;
-    height: 280px;
+    height: 500px;
     object-fit: contain;
 }
+.slide-button {
+    text-align: center;
+    margin: 15px 0 0 0;
+}
+/* estilização dos botões */
+.slide-btn {
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(
+        135deg,
+        #1E3A8A,
+        #2563EB
+    );
+    color: white;
+    border: none;
+    border-radius: 12px;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+.slide-btn:hover{
+    box-shadow: 0 0px 20px rgba(37, 99, 235,0.2);
+    transform: scale(1.1);
+}
+.slide-btn:active{
+    transform: scale(0.95);
+}
 
+/* seção de parcerias */
+.parceria .img-div{
+    justify-content: space-evenly;
+}
+.parceria .img-div img {
+    width: 100%;
+    height: 310px;
+    object-fit: contain;
+}
+/* estilização das imagens */
+.parceria .img-div img:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* seção de perguntar frequentes  */
 .qa{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
     width: 350px;
+    justify-content: center;
 }
 
 /* cor de fundo dos cards */
-.historia, .impulsiona, .servicos, .valores, .trabalho, .parceria, .qa{
+.home-layout, .historia, .impulsiona, .servicos-galeria, .valores, .trabalho, .parceria, .qa{
     background-color: #E5E7EB
 }
 
@@ -96,7 +195,7 @@ h1{
     font-size:56px;
     font-weight: 800; 
     font-style: oblique; 
-    color: #111827;
+    color: #E5E7EB;
 }
 .h1-header{
     color: white;
@@ -107,6 +206,11 @@ h1{
 }
 .servicos {
     font-size: larger;
+}
+.qa h2{
+    font-size: 24px;
+    margin: 0 0 10px 0;
+    font-weight: 600;
 }
 
 /* rodapé com dados da empresa */
